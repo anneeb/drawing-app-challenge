@@ -7,8 +7,9 @@ import Sidebar from "../components/Sidebar";
 
 const App = ({tools, actions}) => (
 	<div>
-		<Canvas 
+		<Canvas
 			tools={tools}
+			actions={actions}
 		/>
 		<Sidebar
 			tools={tools}

@@ -20,13 +20,80 @@
 	top:0;
 	right: 0;
 	height: 100vh;
-	background-color: #CB5599;
-	/*background-color: #263238;*/
+	width: 200px;
+	background-color: #DD2A97;
+	overflow-y: scroll;
 }
 .section {
-	min-height: 100px;
 	width: 100%;
-	color: white;
+	color: #333333;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding: 6px 12px 18px 12px;
+	border-bottom: 2px solid #494949;
 }
 
 /* Candidate defined styles go here! */
+
+.section__heading {
+	padding-bottom: 6px;
+}
+
+/* Button Input */
+
+.button-input input {
+	display: none;
+}
+.button-input label {
+	background: linear-gradient(#A9A9A9, #808080);
+	margin-right: 4px;
+	padding: 4px;
+	border: 2px solid #D3D3D3;
+	border-radius: 6px;
+	cursor: pointer;
+	color: #222222;
+	font-size: 11px;
+	font-weight: bold;
+}
+.button-input label:hover {
+  background: linear-gradient(#808080, #A9A9A9);
+  box-shadow: none;
+}
+
+/* Radio */
+
+.radio {
+	display: inline;
+}
+.radio input:checked + label {
+	background: linear-gradient(#808080, #A9A9A9);
+	box-shadow: 0 0 0 2px #494949;
+}
+
+/* File Input */
+
+.file-input {
+	margin-bottom: 12px;
+}
+.file-image {
+	width: 180px;
+	height: 180px;
+	object-fit: contain;
+}
+.file-image img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/* Other Inputs */
+
+.number-input {
+	width: 100%;
+	font-size: 12px;
+	padding: 3px;
+}
+.color-input {
+	width: 75px;
+	height: 30px;
+	cursor: pointer;
+}
